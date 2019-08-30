@@ -84,10 +84,11 @@ gcloud builds submit --config cloudbuild.yaml
 --------------------------------------------------------------------------------------
 
 ### 6. Connect the GCP to an existing / new git repository
-#### Mirror existing repository
+#### (Optional) Mirror existing repository to keep a source control on gcloud
 > 1. Enable "`Cloud Source Repositories API`" for the GCP Project
 > 2. `https://console.cloud.google.com/code/develop/repo?project=<your-project-id>`
 
-#### Add trigger
+#### Add trigger to either the mirrored repository or the original github one
 > `https://console.cloud.google.com/cloud-build/triggers?project=<your-project-id>`
 
+(For example, a trigger `ON PUSH` on the `MASTER` branch will trigger )
