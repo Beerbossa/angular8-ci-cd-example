@@ -1,4 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/${PROJECT_ID}/my-image', '.']
-images: ['gcr.io/angular8-ci-cd-example/angular8-ci-cd-example:$SHORT_SHA']
+images: ['gcr.io/angular8-ci-cd-example/angular8-ci-cd-example:${SHORT_SHA}']
