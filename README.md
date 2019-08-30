@@ -20,10 +20,6 @@ steps:
   id: 'Prod build'
   args: [ run, build, --prod ]
 
-- name: 'gcr.io/cloud-builders/npm:node-10.10.0'
-  id: 'Test'
-  args: [ run, 'test' ]
-
 - name: 'gcr.io/cloud-builders/gcloud'
   args: [ app, deploy ]
 ```
